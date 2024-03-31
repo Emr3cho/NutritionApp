@@ -1,15 +1,16 @@
 import React from 'react'
 
-const NutritionItem = ({ nutrition, onClick }) => {
+const DailyUsageNutritionitem = ({ nutrition}) => {
   return (
-    <tr onClick={onClick}>
+    <tr>
       <td>{nutrition.name}</td>
       <td>{nutrition.calories}</td>
       <td>{nutrition.proteins}</td>
       <td>{nutrition.carbs}</td>
       <td>{nutrition.fats}</td>
+      <td><button>Delete</button></td>
     </tr>
   )
 }
 
-export default NutritionItem
+export default DailyUsageNutritionitem

@@ -1,17 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import SearchBar from './components/SearchBar'
-import NutritionsTable from './components/NutritionsTable'
+import Index from './pages/Index'
+import Layout from './components/Layout'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Add from './pages/Add'
+
 
 function App() {
 
-  const [results, setResults] = useState([])
+
   return (
     <div className='App'>
-      <div className="search-bar-container">
-        <SearchBar setResults={setResults}/>
-        <NutritionsTable searchResults={results}/>
-      </div>
+      <Router>
+        <Routes>
+          <Route element={<Layout />} path='/'>
+            <Route element={<Index />} index />
+            <Route element={<Add />} path='add' />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   )
 }

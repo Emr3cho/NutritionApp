@@ -2,8 +2,11 @@ import React from 'react'
 import NutritionItem from './NutritionItem'
 import './NutritionsTable.css'
 
-const NutritionsTable = ({ searchResults }) => {
-    console.log(searchResults)
+const NutritionsTable = ({ searchResults, setData }) => {
+    const handleClick = (result) => {
+        const updatedResult = { ...result, id: Date.now() };
+        setData(prev => [...prev, updatedResult])
+    }
     return (
         <table id='nutTable'>
             <thead>
@@ -13,11 +16,10 @@ const NutritionsTable = ({ searchResults }) => {
                     <th>Proteins</th>
                     <th>Carbs</th>
                     <th>Fats</th>
-                    <th>Options</th>
                 </tr>
             </thead>
             <tbody>
-                {searchResults.map((result) => { return <NutritionItem key={result.id} props={result}/>})}
+                {searchResults.map((result) => { return <NutritionItem key={result.id} nutrition={result} onClick={() => handleClick(result)}/>})}
             </tbody>
         </table>
     )
