@@ -1,8 +1,7 @@
 import React from 'react'
 import DailyUsageNutritionitem from './DailyUsageNutritionitem'
 
-const DailyNutritionUsage = ({searchResults}) => {
-    console.log(searchResults)
+const DailyNutritionUsage = ({searchResults, setNuts}) => {
     return (
         <table id='nutTable'>
             <thead>
@@ -16,7 +15,7 @@ const DailyNutritionUsage = ({searchResults}) => {
                 </tr>
             </thead>
             <tbody>
-                {searchResults.map((result) => { return <DailyUsageNutritionitem key={result.id} nutrition={result}/> })}
+                {searchResults.map((result) => { return <DailyUsageNutritionitem key={result.id} nutrition={result} setNuts={setNuts}/> })}
             </tbody>
             <tfoot>
                 <tr>

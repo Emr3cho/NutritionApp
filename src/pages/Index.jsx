@@ -10,7 +10,7 @@ const Index = () => {
     return (
         <div>
             <div className="search-bar-container">
-                <DailyNutritionUsage searchResults={dailyNuts} />
+                <DailyNutritionUsage searchResults={dailyNuts} setNuts={setDailyNuts}/>
                 <SearchBar setResults={setResults} />
                 <NutritionsTable searchResults={results} setData={setDailyNuts} />
             </div>
