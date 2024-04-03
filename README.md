@@ -54,3 +54,11 @@ npm run dev
 ```
 3. After the server starts, the application should be accessible via http://localhost:5173. Open this URL in your web browser to view the application.
 
+<img width="1255" alt="1" src="https://github.com/Emr3cho/NutritionApp/assets/46760583/72a2fb9a-a892-4a97-84e5-8c884bc9266f">
+<img width="1255" alt="2" src="https://github.com/Emr3cho/NutritionApp/assets/46760583/b76e1b5c-b03d-4a4f-9e7e-ec39b55ee4ad">
+<img width="1255" alt="3" src="https://github.com/Emr3cho/NutritionApp/assets/46760583/08c672b4-c2f8-496e-af7f-689bb899cb7c">
+<img width="1256" alt="4" src="https://github.com/Emr3cho/NutritionApp/assets/46760583/f01612b7-42ea-4ca2-9e76-b5ac3eacff93">
+<img width="1256" alt="5" src="https://github.com/Emr3cho/NutritionApp/assets/46760583/b9536b53-7571-478f-aaf6-03e99bb033af">
+
+
+
